@@ -1,0 +1,15 @@
+{
+    "accounts": [
+        
+    ],
+
+    "cacheToClean": [
+        "sounds",
+        "logs"
+    ],
+
+    "username": "myname",
+    "clearTemp": true,
+    "createLogs": false,
+    "clearDelay": 30
+}
