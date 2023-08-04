@@ -18,7 +18,7 @@ The installation proccess is very simple. You have to press the green "Code" but
 
 Changes are have to made to the config file in order for the program to work. The config file already comes with the program and as specified earlier, should be called ```config.json```. The content of the file should look something like this but without the comments:
 
-```json
+```jsonc
 {
 "accounts": [ 
     // list of all your accounts where you want to clear the cache, use only full /folder name (e.g ROBLOXCORPORATION.ROBLOX.username_5x0a1b2c...)
