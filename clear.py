@@ -84,5 +84,5 @@ def main():
         time.sleep(config["clearDelay"])
         
 
-if __name__ == "__main__": # unnecessary, but i still gonna work good
+if __name__ == "__main__": # unnecessary, but it still gonna work good
     main()
