@@ -17,8 +17,7 @@ def log(message):
 def clear_cache(dir_name):
     for account in config["accounts"]:
         account_dir = os.path.join(localappdata, f"Packages\\{account}")
-        print(account_dir)
-
+        
         try:
             shutil.rmtree(os.path.join(account_dir, f"LocalState\\{dir_name}"))
 
