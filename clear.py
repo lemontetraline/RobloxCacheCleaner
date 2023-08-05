@@ -17,9 +17,12 @@ def log(message):
 def clear_cache(dir_name):
     for account in config["accounts"]:
         account_dir = os.path.join(localappdata, f"Packages\\{account}")
+        print(account_dir)
 
         try:
             shutil.rmtree(os.path.join(account_dir, f"LocalState\\{dir_name}"))
+
+            log(f"The cache of {account} of type {dir_name} was successfully cleared.")
         except OSError as err:
             error_type = "" # insane shit to check what error is that
             if str(err).find("cannot find") > 0:
@@ -29,8 +32,6 @@ def clear_cache(dir_name):
 
             error_message = f"The cache of {account} of type {dir_name} cannot be removed because {error_type}"
             log(error_message)
-
-        log(f"The cache of type {dir_name} was successfully cleared.")
 
 def clear_temp():
     temp_dir = os.path.join(localappdata, "Temp")
